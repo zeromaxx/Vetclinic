@@ -1,0 +1,100 @@
+body {
+    font-family: "Roboto Slab", serif;
+}
+
+.top-nav span {
+    color: #b4b4b4;
+}
+
+.top-nav p {
+    color: #80ceca;
+}
+
+.divider {
+    max-width: 270px;
+    width: 100%;
+    color: #b4b4b4;
+    display: inline-block;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.navbar a {
+    color: rgba(255, 255, 255, 0.7);
+}
+section {
+    min-height: 82vh;
+    position: relative;
+}
+.services p {
+    color: #787878;
+}
+.services b {
+    font-size: 18px;
+}
+.services span {
+    color: #80ceca;
+}
+.alert-msg {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.active-link {
+    font-weight: bold;
+}
+
+.navbar-nav a {
+    color: white;
+}
+.navbar-nav a:hover {
+    color: white;
+}
+a {
+    text-decoration: none !important;
+}
+td {
+    vertical-align: middle !important;
+}
+
+#hours-container {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.hour {
+    border: 2px solid #80ceca;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 2em;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: small;
+}
+
+.selected-hour {
+    background-color: #80ceca;
+    color: white;
+}
+.petid {
+    cursor: pointer;
+}
+.modal-header {
+    display: flex;
+    flex-direction: column;
+}
+.modal-title{
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    text-decoration-color: #80ceca;
+}
+.close {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    border: none;
+    font-size: 1.5rem;
+}
+#output{
+    margin-top: 1rem;
+}
