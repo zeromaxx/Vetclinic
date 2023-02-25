@@ -2,4 +2,4 @@
 
 <h3>Homepage</h3>
 
-![My Image](images/my-image.jpg)
+![My Image](!screenshots/home.png)
