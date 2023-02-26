@@ -12,7 +12,7 @@
 
 ![My Image](!screenshots/create_appointment.png)
 
-<h3>User can see their upcoming appointments</h3>
+<h3>Users can see their appointments, edit the hours of the appointment, or cancel it all together.</h3>
 
 ![My Image](!screenshots/user_appointments.png)
 
