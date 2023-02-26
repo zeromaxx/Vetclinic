@@ -8,5 +8,8 @@
 
 ![My Image](!screenshots/register.png)
 
+<h3>Create an appointment</h3>
 
-<h3>Cr</h3>
+![My Image](!screenshots/create_appointment.png)
+
+
