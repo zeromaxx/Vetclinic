@@ -12,10 +12,14 @@
 
 ![My Image](!screenshots/create_appointment.png)
 
-<h3>Users can check their upcoming appointments</h3>
+<h3>User can see their upcoming appointments</h3>
 
 ![My Image](!screenshots/user_appointments.png)
 
 <h3>Secretary role can confirm, edit or delete appointments</h3>
 
 ![My Image](!screenshots/secretary_appointments.png)
+
+<h3>Doctor role can check their upcoming appointments and insert a pet examination if needed.</h3>
+
+![My Image](!screenshots/doctor_appointments.png)
