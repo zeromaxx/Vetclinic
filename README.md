@@ -12,6 +12,10 @@
 
 ![My Image](!screenshots/create_appointment.png)
 
+<h3>Users can check their upcoming appointments</h3>
+
+![My Image](!screenshots/user_appointments.png)
+
 <h3>Secretary role can confirm, edit or delete appointments</h3>
 
 ![My Image](!screenshots/secretary_appointments.png)
