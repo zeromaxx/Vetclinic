@@ -1,4 +1,6 @@
-<b>Vetclinic</b><p>is a website that allows registered users to book appointments with a vet clinic. Implements 3 user roles, the roles of user, secretary and doctor, each with their own set of privileges and accesses. Technologies used: Laravel, Html, Bootstrap, Jquery, Javascript, Php Sql.</p>
+<b>Vetclinic</b><p>is a website that allows registered users to book appointments with a vet clinic. Implements 3 user roles, the roles of user, secretary and doctor, each with their own set of privileges and accesses.</p>
+
+<h3>Technologies used: Laravel, Html, Bootstrap, Jquery, Javascript, Php Sql./h3>
 
 <h3>Homepage</h3>
 
