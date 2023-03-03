@@ -3,7 +3,7 @@
 <h3>Technologies:</h3>
     <p>Laravel, Html, Bootstrap, Jquery, Javascript, Php Sql</p>
 
-<h3>Homepage</h3>
+<h4>Homepage</h4>
 
 ![My Image](!screenshots/home.png)
 
@@ -15,7 +15,7 @@
 
 <br/>
 
-<h4>Create an appointment</h4>
+<h4>user role can book an appointment</h4>
 
 ![My Image](!screenshots/create_appointment.png)
 
