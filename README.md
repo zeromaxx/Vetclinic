@@ -15,7 +15,7 @@
 
 <br/>
 
-<h4>user role can book an appointment</h4>
+<h4>Users can book an appointment with the clinic.</h4>
 
 ![My Image](!screenshots/create_appointment.png)
 
@@ -33,6 +33,6 @@
 
 <br/>
 
-<h4>Doctor role can check their upcoming appointments and insert a pet examination if needed.</h4>
+<h4>Doctor role can check their upcoming appointments, view patient records and insert a pet examination if needed.</h4>
 
 ![My Image](!screenshots/doctor_appointments.png)
