@@ -25,6 +25,7 @@ class User extends Authenticatable
         'fullname',
         'afm',
         'telephone',
+        'role'
     ];
 
     public function pets()
