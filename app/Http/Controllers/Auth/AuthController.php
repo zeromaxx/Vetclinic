@@ -59,6 +59,7 @@ class AuthController extends Controller
             'telephone' => $phone,
             'fullname' => $fullname,
             'email' => $email,
+            'role' => 'customer'
         ]);
 
         if (!empty($user)) {
