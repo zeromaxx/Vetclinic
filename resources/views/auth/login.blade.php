@@ -11,7 +11,7 @@
             <h2 class="mb-3">Είσοδος</h2>
             <label for="username" class="form-label">Username</label>
             <input required type="text" class="form-control mb-3" name="username">
-            <label for="psw" class="form-label">Επώνυμο</label>
+            <label for="psw" class="form-label">Κωδικός</label>
             <input required type="password" class="form-control" name="password">
             <div class="d-flex justify-content-between align-items-center mt-2">
                 <button style="background-color: #80ceca;" class="btn text-white" type="submit">Είσοδος</button>
