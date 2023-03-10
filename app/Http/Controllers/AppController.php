@@ -150,8 +150,20 @@ class AppController extends Controller
             if ($pet == null) {
                 return redirect()->back()->with('error_msg', 'Προσθέστε ένα κατοικίδιο πρίν κλείσετε ραντεβού');
             }
+
             $schedule_date = $request->input('schedule_date');
             $time = $request->input('time');
+
+            $currentDate = Carbon::now()->format('Y-m-d');
+
+            if ($currentDate > $schedule_date) {
+                return redirect()->back()->with('error_msg', 'Η ημερομηνία δεν είναι έγκυρη.');
+            }
+
+            $appointments = Appointment::where('user_id', $id)->get()->toArray();
+
+            // dd($appointments);
+
             $appointment = Appointment::create([
                 'user_id' => $id,
                 'pet_id' => $request->input('petId'),
@@ -218,7 +230,7 @@ class AppController extends Controller
     {
 
         $user_id = auth()->user()->id;
-        $appointments = Appointment::where('user_id', $user_id)->get();
+        $appointments = Appointment::with("pet")->where('user_id', $user_id)->get();
         return view('my_appointments', ['appointments' => $appointments]);
     }
 
@@ -248,7 +260,7 @@ class AppController extends Controller
         $appointment->status = 'cancelled';
         $appointment->save();
 
-        return redirect()->to('appointments/')->with('success', 'Το ραντεβού ακυρώθηκε.');
+        return redirect()->to('my_appointments')->with('success', 'Το ραντεβού ακυρώθηκε.');
     }
 
     public function edit_appointment($id)

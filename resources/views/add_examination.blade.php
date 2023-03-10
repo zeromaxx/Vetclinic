@@ -2,7 +2,7 @@
     {{ 'Προσθήκη Εξέτασης' }}
 @endsection
 @include('inc.header')
-
+<h3 style="color:red"></h3>
 <body>
     @include('inc.navbar')
     @if (\Session::has('success'))

@@ -16,6 +16,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Ημερομηνία</th>
                 <th scope="col">Ώρα</th>
+                <th scope="col">Κατοικίδιο</th>
                 <th scope="col">Κατάσταση</th>
                 <th scope="col">Ενέργειες</th>
             </tr>
@@ -32,6 +33,7 @@
                     </th>
                     <td>{{ $appointment['schedule_date'] }}</td>
                     <td>{{ $appointment['time'] }}</td>
+                    <td>{{ $appointment['pet']['name'] }}</td>
                     <td>
                         @if (!is_null($appointment['user_id']) && $appointment['status'] == 'pending')
                             Μη Επιβεβαιωμένο

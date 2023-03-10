@@ -106,7 +106,7 @@ class AuthController extends Controller
         $validation = [
             'email' => 'Το email  δεν είναι σωστό.',
             'exists' => 'Το email  δεν υπάρχει.',
-          
+
         ];
 
         $request->validate([
