@@ -12,11 +12,11 @@
     @endif
 
     <div class="w-75 m-auto mt-4">
-        <form action="{{ route('users') }}" method="POST" class="my-2 my-lg-0 d-flex">
+        <form action="{{ route('users') }}" method="POST" class="my-2 my-lg-0 d-flex justify-content-center">
             {{ csrf_field() }}
             <input value="{{ old('search', $search) }}" class="form-control mr-sm-2 w-50" name="query" type="text"
                 placeholder="Αναζήτηση" aria-label="Αναζήτηση">
-            <button class="btn btn-outline-primary my-2 my-sm-0 ms-2" type="submit">Αναζήτηση</button>
+            <button class="btn btn-outline-dark  my-2 my-sm-0 ms-2" type="submit">Αναζήτηση</button>
         </form>
     </div>
 

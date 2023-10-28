@@ -5,7 +5,7 @@
 
 <body>
     @include('inc.navbar')
-    <section class="d-flex align-items-center justify-content-center">
+    <section class="d-flex align-items-center justify-content-center flex-column">
         <form action="{{ route('process_login') }}" method="POST" class="form-control border-0 w-50">
             {{ csrf_field() }}
             <h2 class="mb-3">Είσοδος</h2>
@@ -25,6 +25,24 @@
             @if (session()->has('success_msg'))
                 <div class="alert alert-success message text-center mt-2" role="alert">{{ session('success_msg') }}</div>
             @endif
+        </form>
+        <form style="" action="{{ route('quick.login') }}" method="post">
+            @csrf
+            <input type="hidden" name="username" value="Απλός Χρήστης">
+            <input type="hidden" name="password" value="Απλός Χρήστης">
+            <button class="btn btn-dark" style="min-width: 200px" type="submit">Είσοδος ως Επισκέπτης</button>
+        </form>
+        <form class="mt-2" action="{{ route('quick.login') }}" method="post">
+            @csrf
+            <input type="hidden" name="username" value="Γραμματεία">
+            <input type="hidden" name="password" value="Γραμματεία">
+            <button class="btn btn-info text-white" style="min-width: 200px" type="submit">Είσοδος ως Γραμματεία</button>
+        </form>
+        <form class="mt-2" action="{{ route('quick.login') }}" method="post">
+            @csrf
+            <input type="hidden" name="username" value="Ιατρός">
+            <input type="hidden" name="password" value="Ιατρός">
+            <button class="btn btn-secondary" style="min-width: 200px" type="submit">Είσοδος ως Γιατρός</button>
         </form>
     </section>
 

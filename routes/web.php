@@ -29,6 +29,7 @@ Route::post('forget-password', [AuthController::class, 'submitForgetPasswordForm
 Route::get('reset-password/{token}', [AuthController::class, 'showResetPasswordForm'])->name('reset.password.get');
 Route::post('reset-password', [AuthController::class, 'submitResetPasswordForm'])->name('reset.password.post');
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+Route::post('/quick-login', [AuthController::class, 'quickLogin'])->name('quick.login');
 
 
 Route::group(['middleware' => 'auth'], function () {

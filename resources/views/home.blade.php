@@ -13,10 +13,8 @@
                 <h2>Σχετικά με εμάς</h2>
                 <p style="color: #80ceca;" class="fw-bold">Ο καλύτερος φίλος του κατοικιδίου σας</p>
                 <hr class="divider">
-                <p class="lh-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur corporis illum,
-                    soluta natus non quam quia nesciunt cupiditate, aut dolorem sed mollitia recusandae qui fuga
-                    praesentium assumenda voluptatem commodi in! Debitis necessitatibus commodi nostrum accusamus aut
-                    voluptas hic nulla nisi explicabo minima. Ea error voluptatum at veritatis, nesciunt rem commodi?
+                <p class="lh-lg">
+                    Στην Fluffy Paw, το πάθος μας είναι η υγεία και η ευημερία των αγαπημένων σας κατοικίδιων. Βρισκόμαστε στην πρώτη γραμμή της κτηνιατρικής φροντίδας, διασφαλίζοντας ότι τα ζώα της κοινότητάς μας λαμβάνουν την καλύτερη διαθέσιμη θεραπεία.Η ομάδα μας από αφοσιωμένους και συμπονετικούς επαγγελματίες κτηνιάτρους κατανοεί τον μοναδικό δεσμό μεταξύ των κατοικίδιων ζώων και των ιδιοκτητών τους. Γι' αυτό προσεγγίζουμε κάθε περίπτωση με τη μέγιστη προσοχή, χρησιμοποιώντας διαγνωστικά εργαλεία και θεραπείες τελευταίας τεχνολογίας, σε συνδυασμό με ένα απαλό άγγιγμα.
                 </p>
             </div>
         </div>

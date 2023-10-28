@@ -9,9 +9,9 @@
         <form action="{{ route('update_appointment', $appointment['id']) }}" method="POST" class="border-0 w-50">
             @method('PATCH')
             {{ csrf_field() }}
-            <h2 class="mb-3">Ενημέρωση Ραντεβού</h2>
-            <div class="row">
-                <div class="col-6">
+            <h2 class="mb-3 text-center">Τροποποίηση Ραντεβού</h2>
+            <div class="row justify-content-center ">
+                <div class="col-8">
                     <label for="schedule_date" class="form-label">Όνοματεπώνυμο</label>
                     <input value="{{ $appointment['schedule_date'] }}" required type="text" class="form-control mb-3"
                         name="schedule_date">
@@ -20,8 +20,8 @@
                         name="time">
                 </div>
             </div>
-            <div class="d-block d-md-flex justify-content-between align-items-center mt-2">
-                <button style="background-color: #80ceca;" class="btn text-white" type="submit">Ενημέρωση</button>
+            <div class="d-flex justify-content-center mt-2">
+                <button style="background-color: #80ceca;" class="btn text-white w-50" type="submit">Ενημέρωση</button>
             </div>
             @if ($errors->any())
                 <div class="alert alert-danger mt-2">

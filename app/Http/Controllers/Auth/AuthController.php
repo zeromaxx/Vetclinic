@@ -169,4 +169,16 @@ class AuthController extends Controller
         Auth::logout();
         return redirect()->route('login');
     }
+
+    public function quickLogin(Request $request)
+    {
+        $user = User::where('username', $request->username)->first();
+
+        if ($user) {
+            Auth::login($user);
+            return redirect()->intended('/');
+        }
+
+        return redirect()->back()->with('error', 'Quick login failed.');
+    }
 }

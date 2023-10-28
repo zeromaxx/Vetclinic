@@ -301,6 +301,7 @@ class AppController extends Controller
                     ->where('id', '!=', $loggedInUserId)
                     ->where('role', '!=', 'doctor')
                     ->orWhere('telephone', 'like', '%' . $search . '%')
+                    ->orWhere('username', 'like', '%' . $search . '%')
                     ->get();
                 return view('users')->with('users', $users_query)->with('search', $search);
             }
