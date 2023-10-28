@@ -1,4 +1,18 @@
-<p><b>Vetclinic</b> is a website that allows registered users to book appointments with a vet clinic. Implements 3 user roles, the roles of user, secretary and doctor, each with their own set of privileges and accesses.</p>
+Vetclinic: A Comprehensive Veterinary Appointment Platform
+
+Vetclinic is a user-friendly digital platform tailored for seamless veterinary appointments. Catering to various user roles, the system ensures a streamlined process for both pet owners and clinic staff.
+
+    Users (Pet Owners):
+        Book an appointment with ease.
+        View and manage their appointments: reschedule, modify timings, or cancel if necessary.
+
+    Secretary:
+        Oversee and manage all appointments: confirm bookings, make necessary adjustments, or delete them as required.
+
+    Doctors:
+        Access their schedule to view upcoming appointments.
+        Review detailed patient records, ensuring they are well-informed before each session.
+        Log pet examinations, maintaining a thorough record for future reference.
 
 <h3>Technologies:</h3>
     <p>Laravel, Html, Bootstrap, Jquery, Javascript, Php Sql</p>
