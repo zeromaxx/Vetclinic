@@ -32,20 +32,20 @@
             <input type="hidden" name="password" value="Απλός Χρήστης">
             <button class="btn btn-dark" style="min-width: 200px" type="submit">Είσοδος ως Επισκέπτης</button>
         </form>
-        <form class="mt-2" action="{{ route('quick.login') }}" method="post">
+        <form class="mt-3" action="{{ route('quick.login') }}" method="post">
             @csrf
             <input type="hidden" name="username" value="Γραμματεία">
             <input type="hidden" name="password" value="Γραμματεία">
             <button class="btn btn-info text-white" style="min-width: 200px" type="submit">Είσοδος ως Γραμματεία</button>
         </form>
-        <form class="mt-2" action="{{ route('quick.login') }}" method="post">
+        <form class="mt-3" action="{{ route('quick.login') }}" method="post">
             @csrf
             <input type="hidden" name="username" value="Ιατρός">
             <input type="hidden" name="password" value="Ιατρός">
             <button class="btn btn-secondary" style="min-width: 200px" type="submit">Είσοδος ως Γιατρός</button>
         </form>
     </section>
-
+    @include('inc.footer')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>

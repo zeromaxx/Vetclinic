@@ -1,5 +1,5 @@
 @section('title')
-    {{ 'Ιστορικό Πελατών' }}
+{{ 'Ιστορικό Πελατών' }}
 @endsection
 @include('inc.header')
 
@@ -7,8 +7,7 @@
     @include('inc.navbar')
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -32,49 +31,45 @@
         </thead>
         <tbody>
             @php
-                $count = 1;
+            $count = 1;
             @endphp
             @foreach ($records as $record)
-                <tr>
-                    <th scope="row">@php
-                        echo $count++;
+            <tr>
+                <th scope="row">@php
+                    echo $count++;
                     @endphp
-                    </th>
-                    <td>
-                        {{ $record['fullname'] }}
-                    </td>
-                    <td>
-                        @foreach ($record['pets'] as $pet)
-                            {{ $pet['name'] }}
+                </th>
+                <td>
+                    {{ $record['fullname'] }}
+                </td>
+                <td>
+                    @foreach ($record['pets'] as $pet)
+                    {{ $pet['name'] }}
 
-                            <a data-toggle="modal" data-target="#exampleModal" class="petid"
-                                data-petid={{ $pet['id'] }}>
-                                <i class="bi bi-book"></i>
-                            </a>
-                            <br />
-                        @endforeach
-                    </td>
-                </tr>
+                    <a data-toggle="modal" data-target="#exampleModal" class="petid" data-petid={{ $pet['id'] }}>
+                        <i class="bi bi-book"></i>
+                    </a>
+                    <br />
+                    @endforeach
+                </td>
+            </tr>
             @endforeach
 
         </tbody>
     </table>
-
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    @include('inc.footer')
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
 
     <script>
         $('.petid').click(function() {
             $.ajax({
-                method: "GET",
-                url: `/show_exam_record/${$(this).data("petid")}`,
-                success: function(data) {
+                method: "GET"
+                , url: `/show_exam_record/${$(this).data("petid")}`
+                , success: function(data) {
                     if (data.length === 0) {
                         $('#output').append('Δεν βρέθηκαν εξετάσεις.');
                     }
@@ -84,8 +79,8 @@
 
                     });
                     $("#exampleModal").modal("show");
-                },
-                error: function(data, error) {
+                }
+                , error: function(data, error) {
                     console.log(error)
                 }
             });
@@ -93,6 +88,7 @@
         $('.close').click(function() {
             $('#output').empty();
         })
+
     </script>
 
 </body>

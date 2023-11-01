@@ -1,5 +1,5 @@
 @section('title')
-    {{ 'Είσοδος Χρήστη' }}
+{{ 'Είσοδος Χρήστη' }}
 @endsection
 @include('inc.header')
 
@@ -15,25 +15,23 @@
             <label for="password" class="form-label">Κωδικός</label>
             <input type="password" id="password" class="form-control" name="password" required autofocus>
             <label for="password-confirm" class="form-label">Επιβεβαιώση κωδικού</label>
-            <input type="password" id="password-confirm" class="form-control" name="password_confirmation" required
-                autofocus>
+            <input type="password" id="password-confirm" class="form-control" name="password_confirmation" required autofocus>
             <div class="d-flex justify-content-between align-items-center mt-2">
                 <button style="background-color: #80ceca;" class="btn text-white" type="submit">Αλλαγή</button>
             </div>
             @if ($errors->any())
-                <div class="alert alert-danger mt-2">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
+            <div class="alert alert-danger mt-2">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
             @endif
         </form>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    @include('inc.footer')
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
 
 </body>

@@ -1,5 +1,5 @@
 @section('title')
-    {{ 'Αλλαγή Κωδικού' }}
+{{ 'Αλλαγή Κωδικού' }}
 @endsection
 @include('inc.header')
 
@@ -16,20 +16,19 @@
                     Email σας</button>
             </div>
             @if (Session::has('message'))
-                <div class="alert alert-success mt-3" role="alert">
-                    {{ Session::get('message') }}
-                </div>
+            <div class="alert alert-success mt-3" role="alert">
+                {{ Session::get('message') }}
+            </div>
             @endif
             @if ($errors->any())
-                @foreach ($errors->all() as $error)
-                    <div class="alert alert-danger text-center mt-2" role="alert">{{ $error }}</div>
-                @endforeach
+            @foreach ($errors->all() as $error)
+            <div class="alert alert-danger text-center mt-2" role="alert">{{ $error }}</div>
+            @endforeach
             @endif
         </form>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    @include('inc.footer')
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
 
 </body>

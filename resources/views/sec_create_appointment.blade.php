@@ -1,5 +1,5 @@
 @section('title')
-    {{ 'Δημιουργία Ραντεβού' }}
+{{ 'Δημιουργία Ραντεβού' }}
 @endsection
 @include('inc.header')
 
@@ -20,47 +20,45 @@
             <label for="end_time" class="form-label">Κατοικίδια</label>
             <select name="examinationId" class="mb-3 form-select">
                 @foreach ($pets as $pet)
-                    <option value="{{ $pet['id'] }}">{{ $pet['name'] }}</option>
+                <option value="{{ $pet['id'] }}">{{ $pet['name'] }}</option>
                 @endforeach
             </select>
             <div class="d-flex justify-content-between align-items-center mt-2">
                 <button style="background-color: #80ceca;" class="btn text-white" type="submit">Δημιουργία</button>
             </div>
             @if (session()->has('error_msg'))
-                <div class="alert alert-danger message text-center mt-2" role="alert">{{ session('error_msg') }}</div>
+            <div class="alert alert-danger message text-center mt-2" role="alert">{{ session('error_msg') }}</div>
             @endif
             @if (session()->has('success'))
-                <div class="alert alert-success message text-center mt-2" role="alert">{{ session('success') }}
-                </div>
+            <div class="alert alert-success message text-center mt-2" role="alert">{{ session('success') }}
+            </div>
             @endif
         </form>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    @include('inc.footer')
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script>
         const hourValue = document.querySelector('#hour-value');
         console.log(hourValue.value)
         const hours = [
-            '08:00-08:30',
-            '08:30-09:00',
-            '09:00-09:30',
-            '09:30-10:00',
-            '10:00-10:30',
-            '10:30-11:00',
-            '11:00-11:30',
-            '11:30-12:00',
-            '12:00-12:30',
-            '12:30-13:00',
-            '13:00-13:30',
-            '13:30-14:00',
-            '14:00-14:30',
-            '14:30-15:00',
-            '15:00-15:30',
-            '15:30-16:00'
+            '08:00-08:30'
+            , '08:30-09:00'
+            , '09:00-09:30'
+            , '09:30-10:00'
+            , '10:00-10:30'
+            , '10:30-11:00'
+            , '11:00-11:30'
+            , '11:30-12:00'
+            , '12:00-12:30'
+            , '12:30-13:00'
+            , '13:00-13:30'
+            , '13:30-14:00'
+            , '14:00-14:30'
+            , '14:30-15:00'
+            , '15:00-15:30'
+            , '15:30-16:00'
         ];
         $(document).ready(function(event) {
             hours.forEach((hour) => {
@@ -91,6 +89,7 @@
             });
 
         })
+
     </script>
 
 </body>
