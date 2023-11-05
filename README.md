@@ -23,30 +23,35 @@ Doctors:
 ![My Image](!screenshots/home.png)
 
 <br/>
+<hr/>
 
 <h4>Registration</h4>
 
 ![My Image](!screenshots/register.png)
 
 <br/>
+<hr/>
 
 <h4>Users can book an appointment with the clinic.</h4>
 
 ![My Image](!screenshots/create_appointment.png)
 
 <br/>
+<hr/>
 
 <h4>Users can see their appointments, edit the hours of the appointment, or cancel it all together.</h4>
 
 ![My Image](!screenshots/user_appointments.png)
 
 <br/>
+<hr/>
 
 <h4>Secretary role can confirm, edit or delete appointments</h4>
 
 ![My Image](!screenshots/secretary_appointments.png)
 
 <br/>
+<hr/>
 
 <h4>Doctor role can check their upcoming appointments, view patient records and insert a pet examination if needed.</h4>
 
